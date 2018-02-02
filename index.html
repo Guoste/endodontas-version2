@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/tooth.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Stomatologijos kabinetas</title>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-5">
+                <a href="index.html" class="main-logo">
+                    <div class="row">
+                        <img src="img/tooth.png" alt="Odontologijos kabinetas">
+                        <div class="logo-text">Rasos Klimaitės
+                            <br> Stomatologijos kabinetas</div>
+                    </div>
+                </a>
+                <hr>
+                <div class="contacts">
+                    <div class="phone">Tel.: +370 5 279 18 90</div>
+                    <div class="phone"> Mob. Tel.: +370 684 31 281</div>
+                    <div class="address">Jogailos g. 13 (vidiniame kieme), VILNIUS
+                        <br> Gydomosios kosmetologijos centre, 3 kab.</div>
+                    <div id="map"></div>
+                    <script>
+                        function initMap() {
+                            var uluru = { lat: 54.685138, lng: 25.277570 };
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 15,
+                                center: uluru
+                            });
+                            var marker = new google.maps.Marker({
+                                position: uluru,
+                                map: map
+                            });
+                        }
+                    </script>
+                </div>
+
+            </div>
+            <div class="col-xl-7 right-part">
+                <div class="row buttons d-flex justify-content-around">
+                    <button class="col-md btn btn-info btn-services active">Paslaugos</button>
+                    <button class="col-md btn btn-about btn-info">Apie Mus</button>
+                    <button class="col-md btn btn-advice btn-info">Patarimai</button>
+                    <button class="col-md btn btn-gallery btn-info">Galerija</button>
+                </div>
+                <hr>
+
+                <div class="var-window">
+                    <div class="about-us d-none">
+                        <img src="img/Rasa-Klimaite.jpg" alt="Rasa Klimaite">
+                        <div>
+                            <p>Gyd. Rasa Klimaitė endodontologijos specialybę įgijo Kanados Toronto Universitete 1998 m., kur
+                                mokėsi pas žymius Kanados ir JAV profesorius: Shimon Friedman, Calvin D. Torneck, Herbert
+                                Mahmoud Torabinejad ir kitus. Dar studijuodama pradėjo endodontologės praktiką Toronto Universitetinėse
+                                Klinikose ir Toronto miesto ligoninėse, vėliau kaip konsultantė, mokė studentus ir gydytojus,
+                                vedė tobulinimosi kursus endodontologijos srityje, dalyvavo tarptautinėse mokslinėse konferencijose
+                                ir kongresuose.
+                            </p>
+                            <p>
+                                Grįžusi į Lietuvą dirbo VšĮ VUŽL klinikoje gydytoja endodontologe, vedė tobulinimosi kursus gydytojams, mokė studentus ir
+                                rezidentus, paruošė 12-ka gydytojų endodontologų, nuo 1998m. dirba ir savo privačios praktikos
+                                kabinete. Veikla apima dantų gydymą ir profilaktiką, kruopščiai ir kvalifikuotai įvertinant
+                                kiekvieno paciento burnos sveikatos būklę ir parenkant optimaliausią gydymą kiekvienu individualiu
+                                atveju.
+                            </p>
+                            <p>
+                                Gyd. Rasa Klimaitė yra Kanados Endodontologų, Amerikos Endodontologų Sąjungos, Lietuvos Endodontologų Draugijos ir Lietuvos
+                                Odontologų rūmų narė.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="services">
+                        <div class="circle-container">
+                            <div class='deg0 circle-container-element'>Konsultavimas</div>
+                            <div class='deg45 circle-container-element'>Endodontinis pergydymas</div>
+                            <div class='deg315 circle-container-element'>Ėduonies gydymas</div>
+                            <div class='deg135 circle-container-element'>Endodontinis gydymas</div>
+                            <div class='deg180 circle-container-element'>Profilaktika</div>
+                            <div class='deg225 circle-container-element'>Profesionali burnos higiena</div>
+                        </div>
+                    </div>
+                    <div class="advices d-none">
+                        <div class="card-group">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">Dantų šaknų kanalų (endodontinis) gydymas yra pigus būdas išsaugoti savus dantis bei
+                                        išvengti implantacijos.</p>
+                                </div>
+                                <img class="card-img-top" src="img/Endodontinis-gydymas.jpg" alt="dantų šaknų kanalų gydymas">
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/Profesionali-burnos-higiena.jpg" alt="Profesionali burnos higiena">
+                                <div class="card-body">
+                                    <p class="card-text">Nors svarbiausia yra dantis prižiūrėti namuose, labai svarbu 1-3 kartus per metus atlikti
+                                        profesionalią burnos higieną, kuri gali užkirsti kelią apnašų sukeliamoms ligoms.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">Laiku užkirtus kelią ligoms, galima išvengti gydymo, todėl labai svarbu profilaktiškai
+                                        lankytis pas stomotologą ir įvertinti burnos ertmės būklę, net jei neturite nusiskundimų.</p>
+                                </div>
+                                <img class="card-img-top" src="img/Endodontinis-pergydymas.jpg" alt="Endodontinis gydymas">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="carouselExampleControls" class="carousel slide gallery d-none" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block img-fluid" src="img/Odontologijos-kabinetas.jpg" alt="Odontologijos kabinetas">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="img/Rasa-Klimaite.jpg" alt="Rasa Klimaite">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="img/Odontologas.jpg" alt="Odontologas">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="img/Rasos-Klimaites-Stomatologijos-kabinetas.jpg" alt="Rasos Klimaites Stomatologijos kabinetas">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="img/Stomatologijos-kabinetas.jpg" alt="Stomatologijos kabinetas">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="logos">
+            <div class="row d-flex justify-content-around align-items-center">
+                <a target="_blank" href="http://www.endodontologija.lt/"><img class="col-xs" src="img/LED.jpg" alt="Lietuvos endodontologu draugija"></a>
+                <a target="_blank" href="https://www.aae.org/"><img src="img/aae.jpeg" alt="american association of endodontists"></a>
+                <a target="_blank" href="http://odontologurumai.lt/lt//"><img src="img/LROR.jpg" alt="Lietuvos Respublikos odontologu rumai"></a>
+                <a target="_blank" href="https://www.caendo.org/"><img src="img/caelogo.jpg" alt="Canadian Academy of Endodontics"></a>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <div>
+                © 2018 Rasos Klimaitės Stomatologijos kabinetas
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaDsxHcsMISGz-UVVqmyl926lBb2Tqh7g&callback=initMap">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
