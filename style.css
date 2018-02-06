@@ -38,7 +38,6 @@ body {
     width: 450px;
     height: 350px;
     background-color: grey;
-    margin-bottom: 20px;
   }
 .right-part {
     background-color: #a1d6e2;
@@ -135,12 +134,18 @@ footer {
 
 /*responsive*/
 @media screen and (max-width: 1200px){
+    body{
+        padding: 0;
+    }
     .right-part {
-        margin-left: 15px;}
+        margin-left: 15px;
+        margin-right: 15px;
+    }
     #map {
         width: 100%;
         max-width: 850px;
         height: 250px;
+        margin-bottom: 15px;
         }
     }  
 
@@ -155,6 +160,9 @@ footer {
         margin: -40px;
         font-size: 16px;
     }
+    .about-us img{
+        float: none;
+    }
     .deg0 { transform: translate(130px); }
     .deg45 { transform: rotate(45deg) translate(130px) rotate(-45deg); }
     .deg135 { transform: rotate(135deg) translate(130px) rotate(-135deg); }
@@ -162,18 +170,14 @@ footer {
     .deg225 { transform: rotate(225deg) translate(130px) rotate(-225deg); }
     .deg315 { transform: rotate(315deg) translate(130px) rotate(-315deg); }
 }
-@media screen and (max-width: 700px) {
-    .about-us img{
-        float: none;
-        width: 300px;
-        margin: 0 25px 15px 0;
-    }
-}
 @media screen and (max-width: 550px) {
+    .about-us img{
+        width:200px;
+    }
     .deg315 { transform: translate(100px); }
     .deg45 { transform: rotate(60deg) translate(130px) rotate(-60deg); }
     .deg180 { transform: translate(-100px); }
-    .deg0 { transform: rotate(300deg) translate(100px) rotate(-300deg); }    
+    .deg0 { transform: rotate(300deg) translate(100px) rotate(-300deg);}    
 }
 
 
